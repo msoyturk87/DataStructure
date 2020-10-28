@@ -55,23 +55,7 @@ public class Turn90Right {
             }
                 System.out.println();
         }
-        System.out.println("IN PLACE REVERSE  ");
 
-        int [] reverse={1,2,3,4,5,6,7,8,9};
-        int tem=0;
-
-        for (int k = 0; k < reverse.length/2; k++) {
-
-            tem=reverse[k];
-            reverse[k]=reverse[reverse.length-k-1];
-            reverse[reverse.length-k-1]=tem;
-
-        }
-
-        for (int k2 = 0; k2 < reverse.length; k2++) {
-            System.out.print(reverse[k2]);
-
-        }
 
 
     }
