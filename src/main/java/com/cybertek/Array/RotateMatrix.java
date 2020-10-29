@@ -9,6 +9,7 @@ public class RotateMatrix {
             for (int y=0;y<5;y++)
                 matrix[i][y]=valueOfCell++;
         printMatrix(rotateMatrixRight(matrix));
+
     }
     public static int[][] rotateMatrixRight(int[][] matrix) {
         if (!(matrix.length == 0 || matrix.length != matrix[0].length)) {
