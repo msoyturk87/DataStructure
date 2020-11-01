@@ -77,7 +77,37 @@ public class CyLinkedList {
 
             }
 
-    // ASSIGNMENT 3
+
+    // ASSIGNMENT 3 Short Solution
+    public void findMiddleNodesShort() {
+        int i=0;
+
+        Node current=first;
+        Node precursor=first;
+
+        while(precursor.next!=null) {
+            i++;
+            precursor=precursor.next.next;
+
+            if(precursor==null){
+                System.out.println(current.x);
+                System.out.println(current.next.x);
+                break;
+            }
+            else if (precursor.next==null)
+             {
+                System.out.println(current.next.x);
+                 break;
+
+             }
+            current=current.next;
+
+
+        }
+
+
+
+    }
     public void findMiddleNodes() {
 
         int size = 1;

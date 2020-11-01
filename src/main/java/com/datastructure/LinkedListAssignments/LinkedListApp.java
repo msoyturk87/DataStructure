@@ -17,7 +17,15 @@ public class LinkedListApp {
         cyLinkedList.printLinkedList();
         System.out.println("=============== FindMiddleNodes ===============");
         cyLinkedList.addLast(7);
+        cyLinkedList.addLast(8);
+        cyLinkedList.addLast(9);
+        cyLinkedList.addLast(10);
+
         cyLinkedList.findMiddleNodes();
+        System.out.println("=============== FindMiddleNodes Short ===============");
+
+        cyLinkedList.findMiddleNodesShort();
+
         System.out.println("=============== nth element ===============");
         cyLinkedList.nthElementFromEnd(1);
         System.out.println("=============== Reversed one ===============");
