@@ -28,10 +28,11 @@ public class CyLinkedList {
         public boolean isEmpty(){       // we can return size too
             return first==null;
         }
-
+        // ASSIGNMENT 1
         public void reverse( ){
 
-            Node prev=null,next=null;
+            Node prev=null;
+            Node next=null;
             Node current=first;
 
           while (current != null) {
@@ -51,7 +52,7 @@ public class CyLinkedList {
             printLinkedList();
 
             }
-
+            // ASSIGNMENT 2
         public void nthElementFromEnd(int position){
 
         int i=0;
@@ -76,7 +77,7 @@ public class CyLinkedList {
 
             }
 
-
+    // ASSIGNMENT 3
     public void findMiddleNodes() {
 
         int size = 1;
