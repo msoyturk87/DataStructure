@@ -1,4 +1,4 @@
-package com.cybertek.LinkedList;
+package com.datastructure.LinkedListAssignments;
 
 public class LinkedListApp {
     public static void main(String[] args) {
@@ -15,12 +15,16 @@ public class LinkedListApp {
         System.out.println("===============");
         cyLinkedList.deleteLast();
         cyLinkedList.printLinkedList();
-        System.out.println("nth element");
+        System.out.println("=============== FindMiddleNodes ===============");
+        cyLinkedList.addLast(7);
+        cyLinkedList.findMiddleNodes();
+        System.out.println("=============== nth element ===============");
         cyLinkedList.nthElementFromEnd(1);
-        System.out.println("Reversed one");
+        System.out.println("=============== Reversed one ===============");
         cyLinkedList.reverse();
-        System.out.println("nth element");
+        System.out.println("=============== nth element ===============");
         cyLinkedList.nthElementFromEnd(1);
+
 
 
 

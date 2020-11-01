@@ -1,4 +1,4 @@
-package com.cybertek.LinkedList;
+package com.datastructure.LinkedListAssignments;
 
 import java.util.NoSuchElementException;
 
@@ -76,6 +76,51 @@ public class CyLinkedList {
 
             }
 
+
+    public void findMiddleNodes() {
+
+        int size = 1;
+        int end=0;
+        int last=0;
+
+        Node current = first;
+        Node precursor = first;
+
+        while (current!= null){
+
+            if (current.next == null) {
+                //to control size is correct or not
+                System.out.println("size = " + size);
+
+                // odd or even
+                if (size % 2 == 0) {
+                    end = size / 2;
+                    last = size / 2 + 1;
+                } else {
+                    end = last = size / 2;
+
+                }
+                for (int i = 1; i <= last; i++) {
+                    if (i == end || i == last) {
+                        System.out.println(precursor.x);
+                        precursor = precursor.next;
+
+                    }
+                    else
+                        precursor = precursor.next;
+                }
+                current = current.next;
+
+
+
+            } else {
+                //To find size
+                current = current.next;
+                size++;
+
+            }}
+
+}
 
 
 
